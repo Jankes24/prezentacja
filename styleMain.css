@@ -1,0 +1,84 @@
+.tlo
+{
+    width: 95%;
+    padding-bottom: 50px;
+    margin: 30px auto;
+    border: 2px rgb(0, 0, 0) solid;
+    background-color: rgba(239, 255, 147, 0.486);
+    background-image: linear-gradient(20deg, rgba(255, 116, 116, 0.795), rgba(146, 78, 235, 0.753), rgba(92, 219, 208, 0.76));
+    border-radius: 5px;
+    box-shadow: 8px 8px 12px 1px rgba(58, 58, 58, 1);
+}
+
+#tytol
+{
+    text-align: center;
+    border-bottom: solid rgb(0, 0, 0) 2px;
+    border-radius: 5px;
+    width: 60%;
+    margin: auto auto;
+    font-size: 140px;
+    font-style: oblique;
+    text-shadow: 0px 0px 11px rgb(112, 0, 0);
+    animation: pulsowanie 5s infinite;
+}
+
+@keyframes pulsowanie
+{
+    0% {transform: translateX(10%); opacity: 0.8; rotate: 1deg; color: rgb(255, 223, 39); text-shadow: 0px 0px 11px rgb(255, 0, 0);}
+    50% {transform: translateX(-10%); opacity: 1; rotate: -1deg; color: rgb(185, 47, 47); text-shadow: 0px 0px 11px rgb(72, 0, 114)}
+    100% {transform: translateX(10%); opacity: .7; rotate: 1deg; color: rgb(0, 202, 27); text-shadow: 0px 0px 11px rgb(0, 119, 255)}
+}
+
+body
+{
+    background-color: rgb(170, 224, 238);
+}
+
+#but1{
+    margin-top: 100px;
+    margin-left: 75%;
+    padding: 30px 70px;
+    font-size: 30px;
+    font-family: cursive;
+    font-style: italic;
+    font-weight: 900;
+    border-radius: 5px;
+    background-color: blanchedalmond;
+    box-shadow: 3px 3px 12px 1px rgb(119, 0, 0);
+    transition: background-color 0.7s, box-shadow 0.7s, color 0.8s
+}
+
+#but1:hover {
+    background-color: #414141; 
+    box-shadow: 5px 5px 15px 2px rgb(78, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+#but2{
+    margin-top: 100px;
+    margin-left: 20%;
+    padding: 50px 100px;
+    font-size: 50px;
+    font-family: cursive;
+    font-style: italic;
+    font-weight: 900;
+    border-radius: 30px;
+    background-color: rgb(115, 255, 169);
+    box-shadow: 3px 3px 12px 1px rgb(119, 0, 0);
+    transition: background-color 0.7s, box-shadow 0.7s, color 0.8s
+}
+
+#but2:hover {
+    background-color: #4f7000; 
+    box-shadow: 5px 5px 15px 2px rgb(78, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+.butt-holder
+{
+    border: rgb(0, 0, 0) 2px solid;
+    border-radius: 6px;
+    width: 90%;
+    margin: 20px auto;
+}

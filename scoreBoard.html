@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Score</title>
+    <link rel="stylesheet" href="styleBoard.css">
+    <script type="module" src="scr.js"></script>
+</head>
+<body>
+    <div class="bg">
+        <h1>
+            GRATULUJE!!
+        </h1>
+    </div>
+    <h2 id="scoreTxt">
+        10
+    </h2>
+    <a href="index.html"><button>Prezentacja <b>↩︎</b></button></a>
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const score = urlParams.get('score');
+        document.getElementById("scoreTxt").innerHTML = `Zdobywasz ${score} na 4 punkty`;
+    </script>
+</body>
+</html>
